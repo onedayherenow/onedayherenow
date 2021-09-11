@@ -1,0 +1,27 @@
+body {
+    background-color: #000;
+}
+
+.divider {
+    background-color: #eee;    
+}
+
+#intro{
+      background-image: url("/img/VectorEquilibrium.jpg");
+      height: 400px;
+}
+
+@media (min-width: 576px) {
+    #intro {
+        height: 600px;
+    }
+}
+
+#book {
+    background-image: url(img/MerkabaFlower.jpg);
+    height: 1200px;
+    background-size: cover;
+    color:aquamarine;
+}
+
+#navBtn

@@ -37,3 +37,7 @@ h3
     background-color: rgba(130, 12, 209, 0.753);
     background-blend-mode:lighten;
 }
+
+p {
+    color: black;
+}

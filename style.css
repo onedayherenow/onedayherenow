@@ -1,27 +1,39 @@
+
 body {
-    background-color: #000;
+    background: radial-gradient(circle, rgb(37, 195, 243) 0%, rgb(61, 5, 99) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-.divider {
-    background-color: #eee;    
+
+#nav {
+    background: linear-gradient(to left, rgb(37, 195, 243), rgb(61, 5, 99));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
-#intro{
-      background-image: url("/img/VectorEquilibrium.jpg");
-      height: 400px;
+h1 {
+    color: black;
+    opacity: 1;
+    /**background: linear-gradient(to left, rgb(1, 204, 126), rgb(47, 211, 32));
+    border-radius: 25px;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  **/
 }
 
-@media (min-width: 576px) {
-    #intro {
-        height: 600px;
-    }
+h3
+{
+    color: black;
 }
 
-#book {
-    background-image: url(img/MerkabaFlower.jpg);
-    height: 1200px;
-    background-size: cover;
-    color:aquamarine;
+#introPicture {
+    height: 500px;
+    background-image: url('img/NeuroFractals.jpg');
+    background-color: rgba(130, 12, 209, 0.753);
+    background-blend-mode:lighten;
 }
-
-#navBtn

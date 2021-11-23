@@ -195,10 +195,6 @@ body {
     */
 }
 
-header{
-    background: black;
-}
-
 /*
 .glowing 
 {
@@ -402,8 +398,8 @@ p {
 
 .shadow {
     position: relative;
-    margin: 200px auto 0;
-    width: 800px;
+    margin: 100px auto 0;
+    width: 80%;
     background: linear-gradient(0deg, #000, #262626);
 }
 

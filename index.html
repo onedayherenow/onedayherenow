@@ -26,6 +26,7 @@
         <div class="container">
           <a class="navbar-brand" href="#">
             <img
+            id="logo"
             src="img/vector-equilibrium.png"
             height="50"
             width="50"
@@ -48,10 +49,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Skills</a>
-              <a class="nav-link" href="#">About Me</a>
-              <a class="nav-link" href="#">Projects</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link active text-white" aria-current="page" href="#">Skills</a>
+              <a class="nav-link text-white" href="#">About Me</a>
+              <a class="nav-link text-white" href="#">Projects</a>
+              <a class="nav-link text-white" href="#">Contact</a>
             </div>
           </div>
 
@@ -61,6 +62,7 @@
             <li class="nav-item me-3 me-lg-0 dropdown">
               <a class="nav-link" href="#">
                 <img
+                id="logo"
                 src="img/vector-equilibrium2.png"
                 height="50"
                 width="50"
@@ -72,35 +74,83 @@
         </div>
       </nav>
 
-       <!-- Background image -->
-  <div
-  id="introPicture"
-  class="p-5 text-center bg-image shadow-3-strong"
+       <!-- Background image --->
+
+      <!----
+        <div class="glowing">
+        <span  style="--i:1;"></span>
+        <span  style="--i:2;"></span>
+        <span  style="--i:3;"></span>
+      </div>
+    -->
+
+<div id="area">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+
+  <div id="intro"
+  class=" text-center bg-image shadow-3-strong"
   >
-  <div class="mask" style="background-color: rgba(9, 55, 153, 0.308);">
+  <img class="dark-img" src="img/editspace.jpg" alt="dark space">
+  <div class="mask" >
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
-        
-          <h1 class="mb-3">Daniel Zuluaga</h1>
-        <h3 class="mb-3">Software Developer</h3>
-        <h4>Artist</h4>
-        <h5>To me, developing software is an art</h5>
+       
+          <h1 class="mb-3  text-center" >Daniel Zuluaga</h1>
+        <h2 class="mb-3 " >Software Developer</h2>
+        <h4  class="text-white " >Artist</h4>
+        <h5 class="text-white neon mt-3" data-text="[To me, developing software is an art]">
+          To me, developing software is an art</h5>
       </div>
     </div>
   </div>
 </div>
-  <!-- Background image -->
+  <!--Background image  --> 
     </header>
 
-    <main class="my-5">
+  <div>  
+    <main>
       <div class="container"></div>
-  <!-- Section Skills-->
-      <section class="text-center" id="Skills">
+
+  <!--Section Skills -->
+      <section class="text-center" id="skills">
         <h3><strong>Skills</strong></h3>
 
         <div class="row">
           <div class="col-lg-3 col-md-6">
-            <img src="img/c-sharp-logo@logotyp.us.svg">
+            <img src="img/c-sharp-logo@logotyp.us.svg" >
           </div>
           <div class="col-lg-3 col-md-6">
             <img src="img/html-icon.png"  width="160" height="160" class="my-4">
@@ -113,10 +163,23 @@
           </div>
         </div>
 
-      </section>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <img src="img/agile.png"  width="400" height="220" class="my-4 mx-3">
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <img src="img/sql.png"  width="400" height="220" class="my-4 mx-3">
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <img src="img/asp.png"  width="360" height="220" class="my-4 mr-5">
+          </div>
+        </div>
+        
+        
+      </section>     
   <!-- Section Skills-->
 
-  <!-- About Me-->
+  <!-- About Me  -->
       <section class="text-center" id="about">
       <h3 class="my-5">
         <strong>About Me</strong>
@@ -136,34 +199,111 @@
             <p class="text-center  mb-10">I'm a software developer in Indianapolis, IN.  
               I started off in the arts, which then led me to believe that I 
               could take my creativity into software development 
-              to make special practical solutions for applications.
+              to make special practical solutions for applications.<br>
               Lets <u>Create</u>
             </p>
       </section>
 
+    
+
+
+      <!-- Projects-->
+      <div class="section-top-pad-adjust" id="projects">
+				<h3 class="text-center">Featured Projects</h3>
+      
+      <!-- Podcast App-->
+      <div class="containerz">
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>QuickNote</h2>
+            <p>QuickNote is convenient app for taking notes</p>
+            <a href="#">Link to code repository</a>
+          </div>
+        </div>
+
+        <!-- Candor-->
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>QuickNote</h2>
+            <p>QuickNote is convenient app for taking notes</p>
+            <a href="#">Link to code repository</a>
+          </div>
+        </div>
+
+      <!-- QuickNote-->
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>QuickNote</h2>
+            <p>QuickNote is convenient app for taking notes</p>
+            <a href="#">Link to code repository</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Komodo-->
+      <div class="containerz">
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>QuickNote</h2>
+            <p>QuickNote is convenient app for taking notes</p>
+            <a href="#">Link to code repository</a>
+          </div>
+        </div>
+
+        <!-- Social Media App-->
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>Social Media</h2>
+            <p>A fun platform for posting, commenting, and liking content</p>
+            <a href="#">Link to code repository</a>
+          </div>
+        </div>
+
+      <!-- Restaurant Rater-->
+        <div class="box">
+          <span></span>
+          <div class="content">
+            <h2>Restaurant Rater</h2>
+            <p>A simple effective way to create ratings for any restaurant</p>
+            <a href="#">Link to code repository</a>
+          </div>
+        </div>
+
+  
+
+
+
       <!-- Contact Form-->
-      <section class="container my-5">
+      
+      <section class="container"  id="contact">
         <div class="shadow">
+          <h3 class="text-center text-white my-5">Contact</h3>
         <form action="https://formspree.io/f/mbjqbdjb"  method="POST">
           <!-- Name input -->
-          <div class="form-outline mb-4">
+          <div class="form-outline">
             <input type="text" id="form4Example1" class="form-control" />
-            <label class="form-label" for="form4Example1">Name</label>
+            <label class="form-label text-white" for="form4Example1">Name</label>
           </div>
         
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" id="form4Example2" class="form-control" />
-            <label class="form-label" for="form4Example2">Email address</label>
+            <label class="form-label text-white" for="form4Example2">Email address</label>
           </div>
         
           <!-- Message input -->
           <div class="form-outline mb-4">
             <textarea class="form-control" id="form4Example3" rows="4"></textarea>
-            <label class="form-label" for="form4Example3">Message</label>
+            <label class="form-label text-white" for="form4Example3">Message</label>
           </div>
         
-          <!-- Checkbox -->
+          <!-- Checkbox --> 
           <div class="form-check d-flex justify-content-center mb-4">
             <input
               class="form-check-input me-2"
@@ -172,19 +312,21 @@
               id="form4Example4"
               checked
             />
-            <label class="form-check-label" for="form4Example4">
+            <label class="form-check-label text-white" for="form4Example4">
               Send me a copy of this message
             </label>
           </div>
         
-          <!-- Submit button -->
+          <!-- Submit button  -->
           <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
         </form>
         </div>
       </section>
-      <!-- Contact Form-->
+        <!-- Contact Form -->
       </div>
     </main>
+
+ 
 
     <footer></footer>
 

@@ -1,22 +1,372 @@
 
+* {
+font-family: consolas;
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+#intro 
+{
+    height: 400px;
+    background-color: black;
+    background-size: cover;
+}
+
+.dark-img {
+    width: 100%;
+    height: max-content;
+}
+
+
+#skills {
+    background-image: url(/img/editspace.jpg);
+    width:100%;
+    height: 100%;
+}
+
+#about {
+    background-image: url(/img/editspace.jpg);
+    width:100%;
+    height: 100%;
+}
+
+#projects {
+    background-image: url(/img/editspace.jpg);
+    width:100%;
+    height: 100%;
+}
+
+#contact {
+    background-image: url(/img/editspace.jpg);
+    width:100%;
+    height: 100%;
+}
+
+#logo {
+    opacity: 1;
+}
+
+/*
+h3 {
+    font-size: large;
+    background: linear-gradient(90deg, #75078b, #6f00ff, #ff00f3, #0000ff);
+    background-size: 400%;
+    font-size: 70px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    font-weight: 600;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: animate 15s linear infinite;
+}
+*/
+
+@keyframes animate
+{
+    0% {
+        background-position: 0%;
+    } 
+    100% {
+        background-position: 400%;
+    }
+}
+
+nav-link {
+    filter: brightness(1.75);
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+
+.neon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    margin: 0;
+    padding: 0 20px;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 0 20px #ff005b;
+}
+
+.neon:after 
+{
+    position: absolute;
+    content: attr(data-text);
+    top: 0%;
+    left: 0%;
+    padding: 0 20px;
+    z-index: 1;
+    color: #ff005b;
+    filter: blur(15px);
+}
+
+.neon:before
+{
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fe3a80;
+    z-index: -2;
+    opacity: .5;
+    filter: blur(40px);
+}
+
+
+
+
+#area
+{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    background: #001300;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    animation: changeColor 5s linear infinite;
+}
+
+@keyframes changeColor
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+span {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    display: block;
+}
+
+span::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #00ff0a;
+    transform: scale(0.1);
+    box-shadow: 0 0 10px #00ff0a,
+    0 0 20px #00ff0a,
+    0 0 40px #00ff0a,
+    0 0 60px #00ff0a,
+    0 0 80px #00ff0a,
+    0 0 100px #00ff0a;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 2s;
+}
+
+
+span:hover::before {
+    transform: scale(1);
+    transition: 0s;
+}
+
 body {
-    background: radial-gradient(circle, rgb(37, 195, 243) 0%, rgb(61, 5, 99) 100%);
+    /*display: flex;
+    justify-content: center;
+    align-items: center; */
+    background: url(img/editspace.jpg);
+   /* background: radial-gradient(circle, rgb(37, 195, 243) 0%, rgb(61, 5, 99) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    */
+}
+
+header{
+    background: black;
+}
+
+/*
+.glowing 
+{
+    position: relative;
+    width: 750px;
+    height: 750px;
+}
+
+.glowing span
+{
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+
+.glowing span:before 
+{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+
+.glowing span:nth-child(3n+1)::before
+{
+    background: rgba(134, 255, 0.1);
+    box-shadow: 0 0 20px rgba(134, 255, 0, 1),
+                0 0 40px rgba(134, 255, 0, 1),
+                0 0 60px rgba(134, 255, 0, 1),
+                0 0 80px rgba(134, 255, 0, 1),
+                0 0 0 8px rgba(134, 255, 0, 1);
+}
+
+*/
+
+.containerz {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.containerz .box {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;
+}
+
+.containerz .box:hover {
+    transform: translateY(-20px);
+}
+
+.containerz .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.containerz .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+
+.containerz .box:nth-child(2)::before,
+.containerz .box:nth-child(2)::after
+{
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+}
+
+.containerz .box:nth-child(3)::before,
+.containerz .box:nth-child(3)::after
+{
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+}
+
+.containerz .box span
+{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(14, 13, 13, 0.6);
+    z-index: 2;
+}
+
+.containerz .box span ::before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height:  100%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+
+.containerz .box .content
+{
+    position: relative;
+    z-index: 10;
+    padding: 20px 40px;
+}
+
+.containerz .box .content h2
+{
+font-size: 2em;
+color: #fff;
+margin-bottom: 10px;
+}
+
+.containerz .box .content p
+{
+font-size: 1.1em;
+color: #fff;
+margin-bottom: 10px;
+line-height: 1.4em;
+}
+
+.containerz .box .content a
+{
+display: inline-block;
+font-size: 1.1em;
+color: #111;
+background: #fff;
+padding: 10px;
+text-decoration: none;
+font-weight: 700;
 }
 
 
 #nav {
-    background: linear-gradient(to left, rgb(37, 195, 243), rgb(61, 5, 99));
+    background: linear-gradient(to left, rgb(241, 245, 247), rgb(241, 235, 245));
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    opacity: .9;
 }
 
 h1 {
-    color: black;
+    color: rgb(240, 240, 240);
     opacity: 1;
+    font-size: 2.0em;
     /**background: linear-gradient(to left, rgb(1, 204, 126), rgb(47, 211, 32));
     border-radius: 25px;
     -webkit-background-clip: text;
@@ -28,29 +378,72 @@ h1 {
 
 h3
 {
-    color: black;
+    color: rgb(243, 237, 237);
 }
 
 #introPicture {
     height: 500px;
-    background-image: url('img/NeuroFractals.jpg');
+    /*background-image: url('img/NeuroFractals.jpg');
     background-color: rgba(130, 12, 209, 0.753);
     background-blend-mode:lighten;
+*/
 }
 
 p {
-    color: black;
+    color: rgb(235, 228, 228);
+    font-size: 1.2em;
 }
 
-form {
-    margin: 0;
-    padding: 0;
-    background: black
+#topArea
+{
+    background: rgb(238, 231, 231);
 }
+
 
 .shadow {
     position: relative;
     margin: 200px auto 0;
+    width: 800px;
     background: linear-gradient(0deg, #000, #262626);
 }
 
+.shadow::before
+ {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00,
+     #ff0000,  #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% 4px);
+    height: calc(100% 4px);
+    z-index: -2;
+    animation: animate 20s linear infinite;
+}
+
+.shadow::after
+{
+    filter: blur(20px);
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    50%
+    {
+        background-position: 400% 0;
+    }
+    100%
+    {
+        background-position: 0 0;
+    }
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+}
